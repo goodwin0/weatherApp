@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+<div class="page">
+    <div class="header">Прогноз погоды</div>
+    <div class="widget">
+        <ul>
+            <li>
+                <span class="brick iconBlock" id="arrowLeft">
+                    <svg class="iconArrow">
+                        <path d="M15.41,16.59L10.83,12l4.58-4.59L14,6l-6,6l6,6L15.41,16.59z"></path>
+                    </svg>
+                </span>
+            </li>
+            <content id="root"></content>
+            <li>
+                <span class="brick iconBlock" id="arrowRight">
+                    <svg class="iconArrow">
+                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path>
+                    </svg>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<template id="brickContentTml">
+    <li>
+            <span class="brick">
+                <span class="today">Сегодня</span>
+                <br/>
+                <span class="date">1 ноября</span>
+                <br/>
+                <span class="pic">
+                    <object type="image/svg+xml" data="icons/sun.svg" width="50" height="50"></object>
+                </span>
+                <br/>
+                <span class="atDay">Днем -6°</span>
+                <br/>
+                <span class="atNight">Ночью -12°</span>
+                <br/>
+                <span class="precipitation">без осадков</span>
+            </span>
+    </li>
+</template>
+
+<script>
+    init();
+</script>
+</body>
+</html>

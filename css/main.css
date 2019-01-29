@@ -1,0 +1,119 @@
+.page {
+    border: hidden;
+    width: 50%;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    background-color: lightgray;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-top: 2%;
+}
+
+.widget {
+    height: 70%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: middle;
+}
+
+li {
+    float: left;
+    display: block;
+    height: 90%;
+}
+
+.brick {
+    width: 150px;
+    height: 90%;
+    flex-direction: row;
+    position: relative;
+    font-size: medium;
+    padding: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 2px;
+
+}
+
+.brick:hover {
+    background-color: lightblue;
+}
+
+.brickDisabled{
+    cursor: inherit;
+    pointer-events:none;
+}
+
+.brickDisabled:hover {
+    background-color: inherit;
+}
+
+.brickDisabled svg{
+    display: none;
+}
+
+.today {
+    font-size: medium;
+}
+
+.date {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.atDay {
+    font-size: x-large;
+    font-weight: bold;
+}
+.atDay:after {
+    content: "°С";
+}
+.atDay:before {
+    content: "Днем ";
+}
+
+.atNight{
+    font-size: medium;
+    font-weight: lighter;
+    color: gray;
+}
+.atNight:after {
+    content: "°С";
+}
+.atNight:before {
+    content: "Ночью ";
+}
+
+.iconBlock {
+    width: 20px;
+    background-color: lightgray;
+}
+
+.iconArrow {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+span {
+    display: inline-block;
+}
